@@ -19,6 +19,10 @@ Using the provided Equality Table dataset, classify each employee group's Equali
 * Microsoft Excel
 
 ## Outcome
-
+Used Equation: 
+=IF(ABS(C2)<=10,"Fair",IF(ABS(C2)>20,"Highly Discriminative","Unfair"))
+Score between -10 and +10 → Fair
+Score less than -20 or greater than 20 → Highly Discriminative
+Everything else (-20 to -11 and 11 to 20) → Unfair
 Added a new **Equality Class** column to the dataset and categorized all records according to the specified equality criteria to support further analysis of gender pay equality across the organization.
 
